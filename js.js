@@ -20,7 +20,7 @@ function imputCountDown() {
 	console.log(d);
 
 	const h = Math.floor((bebodan % day) / hour);
-	const m = Math.floor((bebodan % day) / minute);
+	const m = Math.floor((bebodan % hour) / minute);
 	const s = Math.floor((bebodan % minute) / second);
 
 	firstDay.innerHTML = d;
